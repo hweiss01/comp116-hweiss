@@ -12,7 +12,7 @@ caps = PacketFu::Capture.new(:start=> true, :iface => 'eth0', :promisc => true)
 caps.stream.each do |raw| #iterate all captured packets
 packet = PacketFu::Packet.parse(raw) #returns correct packet subclass based on raw data
 
-protocl = packet.proto[2]
+protocol = packet.proto[2]
        if packet.proto[1] == "IP"
 
        	  if packet.proto[2] == "TCP"
