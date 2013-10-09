@@ -1,0 +1,17 @@
+Hayley Weiss
+
+Assignment 2
+
+I worked for about 10 hours on this assignment. I originally had trouble figuring out what the appropraite syntax for handling the packets was. Then, I had
+and still had up until submitting problems with being able to scan my 
+VM. I got the error in which nmap claimed my vm was down, even though I could ping it. I tried everything listed on piazza and it didn't help. I know at the very beginning of my coding, though, that I got one nmap scan to work and it looked like my code caught a scan. So i'm hoping that is true!
+
+I got some help from Ayal Pierce and Kezhi Wu for ths project. 
+
+My code has a function for alerting the errors.
+
+The main body of my code parses the packets from the internet connection.
+First it checks all TCP packets for ones with flags marking a Null or Xmas scan.
+Then it looks at all IP packets and uses regular exressions and pattern matching.
+It searches for the pattern "Nmap", "pass", "PASS", and etc. for seeing if
+the payload contains anything of interest.
